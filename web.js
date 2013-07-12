@@ -7,9 +7,9 @@ app.get('/', function(request, response) {
   response.send('Hello World 2!');
 });*/
 
-app.readFile('index.html', "utf-8", function (err, data) {
+app.readFile("index.html", "utf-8", function (err, data) {
   if (err) throw err;
-  console.log(data);
+  console.log(data.toString());
 });
 
 var port = process.env.PORT || 5000;
